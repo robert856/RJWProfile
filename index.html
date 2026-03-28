@@ -3,111 +3,55 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Robert James Williams — Furniture Designer & Product Development</title>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=DM+Serif+Display:ital@0;1&family=Cormorant+Garamond:wght@300;400&display=swap" rel="stylesheet" />
+  <title>Robert James Williams</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,700;1,400&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,700;1,6..96,400&display=swap" rel="stylesheet" />
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
       background: #fff;
       color: #111;
-      font-family: 'DM Sans', 'Inter', sans-serif;
+      font-family: 'Inter', sans-serif;
       font-weight: 300;
     }
 
     /* ── HEADER ── */
     header {
-      padding: 2.5rem 3rem;
-      border-bottom: 1px solid #e8e8e8;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      padding: 3rem 2rem 2rem;
+      border-bottom: 1px solid #e0e0e0;
       text-align: center;
-      gap: 1.25rem;
-      width: 100%;
-    }
-    .header-left {
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 0.3rem;
-      width: 100%;
     }
     .author-name {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(1.6rem, 4vw, 2.4rem);
-      font-weight: 300;
-      letter-spacing: 0.1em;
+      font-family: 'Bodoni Moda', serif;
+      font-size: clamp(1.4rem, 4vw, 2.2rem);
+      font-weight: 700;
+      letter-spacing: 0.08em;
       color: #111;
-      margin-bottom: 0.2rem;
+      margin-bottom: 0;
     }
-    .author-tagline {
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.7rem;
-      font-weight: 300;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: #999;
-    }
-
-    /* ── NAV ── */
-    nav {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 2.25rem;
-      width: 100%;
-    }
-    nav a {
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.7rem;
-      font-weight: 400;
-      letter-spacing: 0.25em;
-      text-transform: uppercase;
+    .site-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.6rem, 4vw, 2.6rem);
+      font-weight: 700;
       color: #111;
-      text-decoration: none;
-      transition: opacity 0.15s;
-    }
-    nav a:hover { opacity: 0.4; }
-
-    /* ── BRANDS ── */
-    .brands-section {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 2.5rem 2rem 3rem;
-      border-bottom: 1px solid #e8e8e8;
-    }
-    .brands-label {
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.65rem;
-      font-weight: 500;
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-      color: #999;
-      margin-bottom: 1.75rem;
-    }
-    .brands-image {
-      width: 100%;
-      display: block;
+      line-height: 1.2;
     }
 
     /* ── SHOW BLOCK ── */
     .show {
       max-width: 900px;
       margin: 0 auto;
-      padding: 3.5rem 2rem 4rem;
-      border-bottom: 1px solid #e8e8e8;
+      padding: 3rem 2rem 4rem;
+      border-bottom: 1px solid #e0e0e0;
     }
     .show-title {
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.65rem;
-      font-weight: 500;
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-      color: #999;
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: clamp(1rem, 2.5vw, 1.3rem);
+      font-weight: 400;
+      color: #555;
       margin-bottom: 2rem;
+      letter-spacing: 0.02em;
     }
 
     /* ── VIDEO ── */
@@ -125,10 +69,9 @@
     }
 
     .show-description {
-      font-family: 'DM Sans', sans-serif;
       font-size: clamp(0.875rem, 1.8vw, 1rem);
-      line-height: 1.8;
-      color: #555;
+      line-height: 1.75;
+      color: #444;
       margin-bottom: 1.25rem;
     }
     .show-description:last-of-type { margin-bottom: 2rem; }
@@ -344,65 +287,14 @@
       flex-shrink: 0;
     }
 
-    /* ── PROFILE ── */
-    .profile-band {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 3.5rem 2rem;
-      border-bottom: 1px solid #e8e8e8;
-      display: flex;
-      align-items: center;
-      gap: 3rem;
-    }
-    .profile-band img {
-      width: 140px;
-      height: 140px;
-      border-radius: 50%;
-      object-fit: cover;
-      object-position: center top;
-      flex-shrink: 0;
-      filter: grayscale(100%);
-    }
-    .profile-band blockquote {
-      margin: 0;
-      text-align: left;
-    }
-    .profile-band blockquote p {
-      font-family: 'DM Serif Display', serif;
-      font-style: italic;
-      font-size: clamp(1rem, 2.2vw, 1.15rem);
-      line-height: 1.85;
-      color: #999;
-      margin: 0 0 1rem;
-    }
-    .profile-rule {
-      width: 28px;
-      height: 1px;
-      background: #ddd;
-      margin-bottom: 0.75rem;
-    }
-    .profile-attribution {
-      font-family: 'DM Sans', sans-serif;
+    /* ── FOOTER ── */
+    footer {
+      padding: 2rem;
+      text-align: center;
       font-size: 0.65rem;
       letter-spacing: 0.2em;
       text-transform: uppercase;
       color: #bbb;
-    }
-    @media (max-width: 600px) {
-      .profile-band { flex-direction: column; text-align: center; }
-      .profile-band blockquote { text-align: center; }
-      .profile-rule { margin: 0 auto 0.75rem; }
-    }
-
-    /* ── FOOTER ── */
-    footer {
-      padding: 2.5rem 3rem;
-      text-align: left;
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.65rem;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: #ccc;
     }
   </style>
 </head>
@@ -422,36 +314,11 @@
   <!-- ══ MAIN PAGE ══ -->
   <div id="main-page">
     <header>
-      <div class="header-left">
-        <p class="author-name">Robert James Williams</p>
-        <p class="author-tagline">Furniture Designer &amp; Product Development Executive</p>
-      </div>
-      <nav>
-        <a href="#">Home</a>
-        <a href="#">Services</a>
-        <a href="#">My Work</a>
-        <a href="#">About Me</a>
-        <a href="#">Contact</a>
-      </nav>
+      <p class="author-name">Robert James Williams</p>
     </header>
 
-
-    <div class="profile-band">
-      <img src="assets/images/headshot.jpg" alt="Robert James Williams" />
-      <blockquote>
-        <p>"Classical design has been in style for 2,000 years, and it will still be in style for the next 2,000."</p>
-        <div class="profile-rule"></div>
-        <p class="profile-attribution">Robert James Williams</p>
-      </blockquote>
-    </div>
-
-    <div class="brands-section">
-      <p class="brands-label">Brands I have designed for</p>
-      <img class="brands-image" src="assets/images/brands_I_have_worked_for.png" alt="Brands: Habersham, Biltmore, Claude Monet, The Plaza, Ambella Home Collection, Ballard Designs, Austin Group" />
-    </div>
-
     <div class="show">
-      <p class="show-title">Residential Collection — 2024</p>
+      <p class="show-title">Voyage of the Dawn Treader</p>
 
       <div class="video-frame">
         <iframe
@@ -492,7 +359,7 @@
 
     <!-- ══ PRIDE AND PREJUDICE ══ -->
     <div class="show">
-      <p class="show-title">Contract &amp; Hospitality — 2023</p>
+      <p class="show-title">Pride and Prejudice</p>
 
       <div class="video-frame">
         <iframe
@@ -530,7 +397,7 @@
 
     <!-- ══ PRINCE CASPIAN ══ -->
     <div class="show">
-      <p class="show-title">Product Development — Concept to Market</p>
+      <p class="show-title">Prince Caspian</p>
 
       <div class="video-frame">
         <iframe
@@ -568,7 +435,7 @@
 
     <!-- ══ THE LION, THE WITCH AND THE WARDROBE ══ -->
     <div class="show">
-      <p class="show-title">Brand Collaborations &amp; Licensing</p>
+      <p class="show-title">The Lion, the Witch and the Wardrobe</p>
 
       <div class="video-frame">
         <iframe
